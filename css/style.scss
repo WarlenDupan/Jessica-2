@@ -1,0 +1,217 @@
+@import  'funcoes';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap');
+
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+
+
+h1{margin: 0 ; padding: 0;}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: rem(100);
+    background-color: #000
+    ;
+    display: flex;
+    justify-content: center;
+    
+ .area_ult {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 90vw;
+    //  background-color: yellow;
+
+    .logo_header {
+        display: flex;
+        width: rem(269);
+        height: 100%;
+        // background-color: aqua;
+        align-items: center;
+        margin-left: rem(30);
+
+        img {
+            width: 100%;
+        }
+    }
+    
+
+    .nav {
+        display: flex;
+        align-items: center;
+        width: rem(580);
+        height: rem(100);
+        // background-color: blue;
+        margin-left: rem(40);
+
+        ul>li {
+            display: inline-block;
+            padding: rem(20);
+            font-size: rem(18);
+            font-weight: bold;
+
+            a {text-decoration: none; color: white;}
+            // a:hover {
+            //     color: #6E0D0F;
+            // }
+        }
+    }
+
+    .btn_header {
+        cursor: pointer;
+        width: rem(290);
+        height: rem(50);
+        background-color: #6E0D0F;
+        border-radius: rem(25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(18);
+        color: white;
+        font-weight: bold;
+    }
+
+ }
+     
+}
+
+main {
+    width: 90vw;
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-top: rem(100);
+    width: 100%;
+    height: rem(555);
+    background-image: url(../img/background-fernanda-moura.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+        width: rem(583);
+        margin-left: rem(117);
+    }
+}
+
+.areaAtuacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(690);
+    width: 100%;
+}
+
+.title_atuacao{
+    margin-top: rem(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6E0D0F;
+    color: rgb(243, 243, 243);
+    height: rem(80);
+    padding: rem(20) 0;
+    font-size: rem(18);
+    font-weight: 900;
+}
+
+
+.card_atuacao {
+    width: rem(260);
+    height: rem(420);
+    margin: rem(50) rem(20) rem(30) rem(20);
+    // box-shadow: 2px 2px 2px;
+    // border:  solid rem(1);
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    p{
+        font-size: rem(20);
+        font-weight: 900;
+    }
+
+    img{
+        margin-top: rem(20);
+        margin-bottom: rem(30);
+        width: rem(180);
+    }
+
+    span {
+        font-size: rem(18);
+        margin: rem(30) 0 rem(30) 0;
+    }
+
+    .btn_areas {
+        width: rem(220);
+        height: rem(40);
+        background-color: #6E0D0F;
+        border-radius: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            color: rgb(243, 243, 243);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+
+.foto_sobre{
+    width: rem(600);
+    height: rem(600);
+    background-image: url(../img/fernanda-moura-escritorio-de-advocacia-SITE.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.sobre{
+    width: 80%;
+    // background-color: brown;
+    display: flex;
+    margin: auto;
+}
+
+.texto {
+    float: left;
+    width: rem(600);
+    text-align: left;
+
+    h1{
+        font-size: rem(30);
+        padding: rem(10);
+    }
+
+    h2 {
+        font-size: rem(23);
+        padding: rem(10);
+    }
+
+    p {
+        padding: rem(5);
+    }
+}
+
+.form {
+    background-color: #6E0D0F;
+    width: 100%;
+    height: rem(675);
+
+    .container_form {
+        height: rem(675);
+        width: 80%;
+        background-color: cyan;
+        margin: auto;
+
+    }
+}
