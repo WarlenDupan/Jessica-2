@@ -1,5 +1,6 @@
 @import  'funcoes';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap');
+@import 'var';
 
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
 
@@ -63,13 +64,13 @@ header {
         cursor: pointer;
         width: rem(290);
         height: rem(50);
-        background-color: #6E0D0F;
+        background-color: $color1;
         border-radius: rem(25);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: rem(18);
-        color: white;
+        color: $black_preenchimento;
         font-weight: bold;
     }
 
@@ -107,13 +108,25 @@ main {
     width: 100%;
 }
 
+.img-atuacao {
+    width: rem(180);
+    height: rem(180);
+    background-color: $color1;
+    border-radius: 50%;
+}
+
+.img-atuacao--1{
+    width: 100%;
+    height: 100%;
+}
+
 .title_atuacao{
     margin-top: rem(40);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6E0D0F;
-    color: rgb(243, 243, 243);
+    background-color: $color1;
+    color: $black_preenchimento;
     height: rem(80);
     padding: rem(20) 0;
     font-size: rem(18);
@@ -126,7 +139,7 @@ main {
     height: rem(420);
     margin: rem(50) rem(20) rem(30) rem(20);
     // box-shadow: 2px 2px 2px;
-    // border:  solid rem(1);
+    border:  solid rem(1);
     border-radius: 25px;
     display: flex;
     flex-flow: column;
@@ -151,7 +164,7 @@ main {
     .btn_areas {
         width: rem(220);
         height: rem(40);
-        background-color: #6E0D0F;
+        background-color: $color1;
         border-radius: 8px;
 
         display: flex;
@@ -159,7 +172,7 @@ main {
         align-items: center;
         
         a{
-            color: rgb(243, 243, 243);
+            color: $black_preenchimento;
             text-decoration: none;
             font-weight: 700;
         }
@@ -203,7 +216,7 @@ main {
 }
 
 .form {
-    background-color: #6E0D0F;
+    background-color: $color1;
     width: 100%;
     height: rem(675);
 

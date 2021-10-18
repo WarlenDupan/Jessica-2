@@ -83,7 +83,7 @@ header .area_ult .btn_header {
   cursor: pointer;
   width: 18.125rem;
   height: 3.125rem;
-  background-color: #6E0D0F;
+  background-color: #bda86c;
   border-radius: 1.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +95,7 @@ header .area_ult .btn_header {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.125rem;
-  color: white;
+  color: #2c2c2c;
   font-weight: bold;
 }
 
@@ -139,6 +139,18 @@ main {
   width: 100%;
 }
 
+.img-atuacao {
+  width: 11.25rem;
+  height: 11.25rem;
+  background-color: #bda86c;
+  border-radius: 50%;
+}
+
+.img-atuacao--1 {
+  width: 100%;
+  height: 100%;
+}
+
 .title_atuacao {
   margin-top: 2.5rem;
   display: -webkit-box;
@@ -150,8 +162,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #6E0D0F;
-  color: #f3f3f3;
+  background-color: #bda86c;
+  color: #2c2c2c;
   height: 5rem;
   padding: 1.25rem 0;
   font-size: 1.125rem;
@@ -162,6 +174,7 @@ main {
   width: 16.25rem;
   height: 26.25rem;
   margin: 3.125rem 1.25rem 1.875rem 1.25rem;
+  border: solid 0.0625rem;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,7 +207,7 @@ main {
 .card_atuacao .btn_areas {
   width: 13.75rem;
   height: 2.5rem;
-  background-color: #6E0D0F;
+  background-color: #bda86c;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,7 +221,7 @@ main {
 }
 
 .card_atuacao .btn_areas a {
-  color: #f3f3f3;
+  color: #2c2c2c;
   text-decoration: none;
   font-weight: 700;
 }
@@ -251,7 +264,7 @@ main {
 }
 
 .form {
-  background-color: #6E0D0F;
+  background-color: #bda86c;
   width: 100%;
   height: 42.1875rem;
 }
