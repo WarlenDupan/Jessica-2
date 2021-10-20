@@ -8,12 +8,14 @@
 h1{margin: 0 ; padding: 0;}
 
 
+
+
 header {
     position: fixed;
     top: 0;
     width: 100vw;
     height: rem(100);
-    background-color: #000
+    background-color: $color-barras
     ;
     display: flex;
     justify-content: center;
@@ -53,7 +55,7 @@ header {
             font-size: rem(18);
             font-weight: bold;
 
-            a {text-decoration: none; color: white;}
+            a {text-decoration: none; color: $white;}
             // a:hover {
             //     color: #6E0D0F;
             // }
@@ -70,7 +72,7 @@ header {
         align-items: center;
         justify-content: center;
         font-size: rem(18);
-        color: $black_preenchimento;
+        color: $white;
         font-weight: bold;
     }
 
@@ -90,7 +92,7 @@ main {
     margin-top: rem(100);
     width: 100%;
     height: rem(555);
-    background-image: url(../img/background-fernanda-moura.jpg); 
+    background-image: url(../img/banner_jessica.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -99,6 +101,8 @@ main {
         margin-left: rem(117);
     }
 }
+
+// AREA DE ATUAÇÃO  
 
 .areaAtuacao {
     display: flex;
@@ -111,14 +115,28 @@ main {
 .img-atuacao {
     width: rem(180);
     height: rem(180);
-    background-color: $color1;
     border-radius: 50%;
+
 }
 
-.img-atuacao--1{
-    width: 100%;
-    height: 100%;
+#civil {
+    background-image: url(../img/homem-de-negocios.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
+#prev {
+    background-image: url(../img/idosos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#trab {
+    background-image: url(../img/homem-de-trabalho.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 .title_atuacao{
     margin-top: rem(40);
@@ -126,7 +144,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: $color1;
-    color: $black_preenchimento;
+    color: $white;
     height: rem(80);
     padding: rem(20) 0;
     font-size: rem(18);
@@ -137,9 +155,9 @@ main {
 .card_atuacao {
     width: rem(260);
     height: rem(420);
-    margin: rem(50) rem(20) rem(30) rem(20);
+    margin: rem(50card) rem(20) rem(30) rem(20);
     // box-shadow: 2px 2px 2px;
-    border:  solid rem(1);
+    // border:  solid rem(1);
     border-radius: 25px;
     display: flex;
     flex-flow: column;
@@ -172,7 +190,7 @@ main {
         align-items: center;
         
         a{
-            color: $black_preenchimento;
+            color: $white;
             text-decoration: none;
             font-weight: 700;
         }
@@ -189,9 +207,11 @@ main {
 }
 
 .sobre{
+    padding: rem(20);
     width: 80%;
     // background-color: brown;
     display: flex;
+    justify-content: space-between;
     margin: auto;
 }
 
@@ -215,16 +235,40 @@ main {
     }
 }
 
+// ****FIM   AREA DE ATUAÇÃO  
+
 .form {
     background-color: $color1;
     width: 100%;
     height: rem(675);
 
-    .container_form {
-        height: rem(675);
+    .title-h1 {
+        padding: rem(10);
         width: 80%;
-        background-color: cyan;
         margin: auto;
+        text-align: center;
+        color: $white;
 
+        p {
+            font-size: rem(20);
+        }
+    }
+
+    .container_form {
+        height: rem(609);
+        width: 80%;
+        margin: auto;
+        color: $white;
+        // background-color: lawngreen;
+        
     }
 }
+
+
+
+
+.maps {
+    width: 100%;
+    margin: auto;
+}
+
