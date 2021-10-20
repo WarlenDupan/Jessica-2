@@ -1,4 +1,5 @@
 @import  'funcoes';
+@import 'header';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap');
 @import 'var';
 
@@ -8,99 +9,34 @@
 h1{margin: 0 ; padding: 0;}
 
 
-
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: rem(100);
-    background-color: $color-barras
-    ;
-    display: flex;
-    justify-content: center;
-    a:hover {
-        color: #524300;
-    }
- .area_ult {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     width: 90vw;
-    //  background-color: yellow;
-
-    .logo_header {
-        display: flex;
-        width: rem(269);
-        height: 100%;
-        // background-color: aqua;
-        align-items: center;
-        margin-left: rem(30);
-
-        img {
-            width: 100%;
-        }
-    }
-    
-
-    .nav {
-        display: flex;
-        align-items: center;
-        width: rem(580);
-        height: rem(100);
-        // background-color: blue;
-        margin-left: rem(40);
-
-        ul>li {
-            display: inline-block;
-            padding: rem(20);
-            font-size: rem(18);
-            font-weight: bold;
-
-            a {text-decoration: none; color: $white;}
-            a:hover {
-                color: #524300;
-            }
-        }
-    }
-
-    .btn_header {
-        cursor: pointer;
-        width: rem(290);
-        height: rem(50);
-        background-color: $color1;
-        border-radius: rem(25);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: rem(18);
-        color: $white;
-        font-weight: bold;
-    }
-
- }
-     
+html{
+    scroll-behavior: smooth;
 }
+
+
 
 main {
     width: 90vw;
     background-color: yellowgreen;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .banner {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-top: rem(100);
     width: 100%;
     height: rem(555);
-    background-image: url(../img/banner_jessica.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
 
     img {
         width: rem(583);
         margin-left: rem(117);
+    }
+
+    #imagem-banner {
+        width: rem(800);
     }
 }
 
@@ -206,6 +142,7 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 50%;
+    margin-top: rem(100);
 }
 
 .sobre{
@@ -218,6 +155,7 @@ main {
 }
 
 .texto {
+    margin-top: rem(100);
     float: left;
     width: rem(600);
     text-align: left;
