@@ -19,7 +19,9 @@ header {
     ;
     display: flex;
     justify-content: center;
-    
+    a:hover {
+        color: #524300;
+    }
  .area_ult {
      display: flex;
      align-items: center;
@@ -56,9 +58,9 @@ header {
             font-weight: bold;
 
             a {text-decoration: none; color: $white;}
-            // a:hover {
-            //     color: #6E0D0F;
-            // }
+            a:hover {
+                color: #524300;
+            }
         }
     }
 

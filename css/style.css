@@ -26,6 +26,10 @@ header {
           justify-content: center;
 }
 
+header a:hover {
+  color: #524300;
+}
+
 header .area_ult {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,6 +81,10 @@ header .area_ult .nav ul > li {
 header .area_ult .nav ul > li a {
   text-decoration: none;
   color: white;
+}
+
+header .area_ult .nav ul > li a:hover {
+  color: #524300;
 }
 
 header .area_ult .btn_header {
