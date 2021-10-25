@@ -179,7 +179,6 @@ main {
 }
 
 .title_atuacao {
-  margin-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,11 +297,11 @@ main {
 .form {
   background-color: #524300;
   width: 100%;
-  height: 42.1875rem;
+  padding: 4.375rem 0 4.375rem 0;
 }
 
 .form .title-h1 {
-  padding: 0.625rem;
+  padding-bottom: 1.875rem;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -311,13 +310,79 @@ main {
 
 .form .title-h1 p {
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .form .container_form {
-  height: 38.0625rem;
   width: 80%;
   margin: auto;
+  margin-top: 0;
   color: white;
+}
+
+input {
+  height: 3.25rem;
+  margin: 0;
+  border-radius: 15px;
+  outline: none;
+  border: solid #524300 0.5px;
+  color: #524300;
+}
+
+input::-webkit-input-placeholder {
+  padding: 0.625rem;
+  color: #524300;
+}
+
+input:-ms-input-placeholder {
+  padding: 0.625rem;
+  color: #524300;
+}
+
+input::-ms-input-placeholder {
+  padding: 0.625rem;
+  color: #524300;
+}
+
+input::placeholder {
+  padding: 0.625rem;
+  color: #524300;
+}
+
+#nome {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nome;
+}
+
+#email {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+#telefone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: telefone;
+}
+
+#enviar {
+  background-color: rgba(255, 230, 1, 0.384);
+}
+
+form {
+  margin: auto;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 0.3125rem;
+      grid-template-areas: "nome nome" "email telefone";
 }
 
 .maps {

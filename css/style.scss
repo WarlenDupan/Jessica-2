@@ -1,5 +1,4 @@
 @import  'funcoes';
-@import 'header';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap');
 @import 'var';
 
@@ -13,13 +12,81 @@ html{
     scroll-behavior: smooth;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: rem(100);
+    background-color: $color-barras;
+    display: flex;
+    justify-content: center;
+    a:hover {
+        color: #524300;
+    }
+ .area_ult {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 90vw;
+    //  background-color: yellow;
 
+    .logo_header {
+        display: flex;
+        width: rem(269);
+        height: 100%;
+        // background-color: aqua;
+        align-items: center;
+        margin-left: rem(30);
+
+        img {
+            width: 100%;
+        }
+    }
+    
+
+    .nav {
+        display: flex;
+        align-items: center;
+        width: rem(580);
+        height: rem(100);
+        // background-color: blue;
+        margin-left: rem(40);
+
+        ul>li {
+            display: inline-block;
+            padding: rem(20);
+            font-size: rem(18);
+            font-weight: bold;
+
+            a {text-decoration: none; color: $white;}
+            a:hover {
+                color: #524300;
+            }
+        }
+    }
+
+    .btn_header {
+        cursor: pointer;
+        width: rem(290);
+        height: rem(50);
+        background-color: $color1;
+        border-radius: rem(25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(18);
+        color: $white;
+        font-weight: bold;
+    }
+
+ }
+     
+}
 
 main {
     width: 90vw;
     background-color: yellowgreen;
     margin: 0 auto;
-    z-index: 1;
 }
 
 .banner {
@@ -77,7 +144,6 @@ main {
 
 
 .title_atuacao{
-    margin-top: rem(40);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,13 +243,16 @@ main {
 
 // ****FIM   AREA DE ATUAÇÃO  
 
+
 .form {
     background-color: $color1;
     width: 100%;
-    height: rem(675);
+    padding: rem(70) 0 rem(70) 0;
+    // height: rem(675);
+    
 
     .title-h1 {
-        padding: rem(10);
+        padding-bottom: rem(30);
         width: 80%;
         margin: auto;
         text-align: center;
@@ -191,19 +260,57 @@ main {
 
         p {
             font-size: rem(20);
+            font-weight: bold;
         }
     }
 
     .container_form {
-        height: rem(609);
+        // height: rem(609);
         width: 80%;
         margin: auto;
+        margin-top: rem(0);
         color: $white;
         // background-color: lawngreen;
-        
     }
 }
 
+input {
+    height: rem(52);
+    margin: 0;
+    border-radius: 15px;
+    outline: none;
+    border: solid $color1 .5px;
+    color: $color1;
+
+    &::placeholder {
+        padding: rem(10);
+        color: $color1;
+    }
+}
+
+#nome {grid-area: nome;}
+#email {grid-area: email;}
+#telefone {grid-area: telefone;}
+#enviar {
+    // grid-area: enviar;
+    background-color: rgba(255, 230, 1, 0.384);
+}
+    
+form {
+margin: auto;
+width: 80%;
+// background-color: hotpink;
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto;
+gap: rem(5);
+    
+grid-template-areas:
+"nome nome"
+"email telefone"
+
+;
+}
 
 
 
@@ -211,4 +318,3 @@ main {
     width: 100%;
     margin: auto;
 }
-
