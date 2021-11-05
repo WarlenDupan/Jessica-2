@@ -318,3 +318,14 @@ grid-template-areas:
     width: 100%;
     margin: auto;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: rem(80);
+    background-color: $color1;
+    color: $white;
+    
+}
