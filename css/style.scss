@@ -75,8 +75,12 @@ header {
         align-items: center;
         justify-content: center;
         font-size: rem(18);
-        color: $white;
         font-weight: bold;
+    }
+
+    & a {
+        color: $white;
+        text-decoration: none;
     }
 
  }
@@ -144,6 +148,7 @@ main {
 
 
 .title_atuacao{
+    padding-top: rem(100);
     display: flex;
     justify-content: center;
     align-items: center;

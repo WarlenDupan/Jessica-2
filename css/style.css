@@ -107,8 +107,12 @@ header .area_ult .btn_header {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.125rem;
-  color: white;
   font-weight: bold;
+}
+
+header .area_ult a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -179,6 +183,7 @@ main {
 }
 
 .title_atuacao {
+  padding-top: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
