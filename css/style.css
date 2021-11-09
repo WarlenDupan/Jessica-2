@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300&display=swap");
+.whats {
+  position: fixed;
+  bottom: 0.9375rem;
+  right: 0.9375rem;
+  width: 4.6875rem;
+}
+
 * {
   padding: 0;
   margin: 0;
