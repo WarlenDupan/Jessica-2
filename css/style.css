@@ -6,6 +6,16 @@
   width: 4.6875rem;
 }
 
+svg {
+  color: #948100;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
